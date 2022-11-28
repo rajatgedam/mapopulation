@@ -71,22 +71,6 @@
         }
 
     </style>
-</head>
-
-<body>
-    <div id="tooltip"></div>
-    <h1 style="text-align: center;">Major Assignment 3 : Part 1</h1>
-    <div class="title"><h3>Rajat Gedam</h3></div>
-<!--    <div class="title"><h2>D3JS, geoPath Generator, Mass Gini Index per County </h2>-->
-<!--    </div>-->
-    <div id="countyClass"></div>
-    <div id="giniClass"></div>
-    <div id="SumSqClass"></div>
-    <div id="POPClass"></div>
-    <div id="POPSClass"></div>
-
-    <div id="container">
-    </div>
     <script>
         /*-------------------------------------------------------*/
         /*------------------- Window setting --------------------*/
@@ -105,7 +89,7 @@
 
         // a topojson file containing population of each town in different years
         const MA_counties = "./data/towns.topojson"
-            // gini index per county
+        // gini index per county
         const gini_index = "./data/gini_index.csv"
 
 
@@ -127,7 +111,7 @@
             /*-------------------------------------------------------*/
             /*-----------------Topojson data handling----------------*/
             /*-------------------------------------------------------*/
-            // if topojson file is imported we need to 
+            // if topojson file is imported we need to
             // convert topology data to geojson
             const topo_data = data[0];
             const geojson = topojson.feature(topo_data, topo_data.objects.ma);
@@ -239,6 +223,23 @@
                 })
         })
     </script>
+</head>
+
+<body>
+    <div id="tooltip"></div>
+    <h1 style="text-align: center;">Major Assignment 3 : Part 1</h1>
+    <div class="title"><h3>Rajat Gedam</h3></div>
+<!--    <div class="title"><h2>D3JS, geoPath Generator, Mass Gini Index per County </h2>-->
+<!--    </div>-->
+    <div id="countyClass"></div>
+    <div id="giniClass"></div>
+    <div id="SumSqClass"></div>
+    <div id="POPClass"></div>
+    <div id="POPSClass"></div>
+
+    <div id="container">
+    </div>
+
 </body>
 
 </html>
